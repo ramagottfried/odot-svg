@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 18.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="792px" height="612px" viewBox="0 0 792 612" enable-background="new 0 0 792 612" xml:space="preserve">
+<g id="stave-1">
+	<g id="events">
+		<g id="scene-1">
+			<rect id="frame" x="93.2" y="72.2" fill="none" stroke="#000000" stroke-miterlimit="10" width="116" height="101.7"/>
+			<g id="source_2_">
+				<circle id="start" fill="none" stroke="#000000" stroke-miterlimit="10" cx="100.4" cy="167" r="1.2"/>
+				<g id="trajectory">
+					<g>
+						<path fill="none" stroke="#000000" stroke-width="0.5" stroke-miterlimit="10" d="M100.4,167c0,0,0-0.2,0-0.5"/>
+						<path fill="none" stroke="#000000" stroke-width="0.5" stroke-miterlimit="10" stroke-dasharray="0.9853,0.9853" d="
+							M100.5,165.5c0.3-5.6,2.2-24.9,15.1-17.5"/>
+						<path fill="none" stroke="#000000" stroke-width="0.5" stroke-miterlimit="10" d="M116,148.2c0.1,0.1,0.3,0.2,0.4,0.3"/>
+					</g>
+				</g>
+			</g>
+			<g id="time_1_">
+				
+					<line id="start_5_" fill="none" stroke="#000000" stroke-width="0.5" stroke-miterlimit="10" stroke-dasharray="1,1" x1="93.2" y1="173.9" x2="93.2" y2="196"/>
+				<g id="duration_2_">
+					<g>
+						<line fill="none" stroke="#000000" stroke-width="0.5" stroke-miterlimit="10" x1="93.2" y1="185" x2="120.6" y2="185"/>
+						<g>
+							<path d="M123.7,185c-1.4,0.5-3.2,1.4-4.3,2.4l0.9-2.4l-0.9-2.4C120.5,183.5,122.2,184.4,123.7,185z"/>
+						</g>
+					</g>
+				</g>
+			</g>
+		</g>
+		<g id="scene-2">
+			<rect id="frame_1_" x="311.5" y="72.2" fill="none" stroke="#000000" stroke-miterlimit="10" width="116" height="101.7"/>
+			<g id="source">
+				<circle id="start_1_" fill="none" stroke="#000000" stroke-miterlimit="10" cx="330.2" cy="147.6" r="1.2"/>
+				<g id="trajectory_1_">
+					<g>
+						<path fill="none" stroke="#000000" stroke-width="0.5" stroke-miterlimit="10" d="M330.2,147.6c0,0,0,0.2,0,0.5"/>
+						<path fill="none" stroke="#000000" stroke-width="0.5" stroke-miterlimit="10" stroke-dasharray="0.9853,0.9853" d="
+							M330.3,149c0.3,5.6,2.2,24.9,15.1,17.5"/>
+						<path fill="none" stroke="#000000" stroke-width="0.5" stroke-miterlimit="10" d="M345.8,166.3c0.1-0.1,0.3-0.2,0.4-0.3"/>
+					</g>
+				</g>
+			</g>
+			<g id="time_2_">
+				
+					<line id="start_4_" fill="none" stroke="#000000" stroke-width="0.5" stroke-miterlimit="10" stroke-dasharray="1,1" x1="311.5" y1="173.9" x2="311.5" y2="196"/>
+				<g id="duration_1_">
+					<g>
+						<line fill="none" stroke="#000000" stroke-width="0.5" stroke-miterlimit="10" x1="311.5" y1="185" x2="339" y2="185"/>
+						<g>
+							<path d="M342,185c-1.4,0.5-3.2,1.4-4.3,2.4l0.9-2.4l-0.9-2.4C338.9,183.5,340.6,184.4,342,185z"/>
+						</g>
+					</g>
+				</g>
+			</g>
+		</g>
+		<g id="scene-2_1_">
+			<rect id="frame_2_" x="452.3" y="72.2" fill="none" stroke="#000000" stroke-miterlimit="10" width="116" height="101.7"/>
+			<g id="source_1_">
+				<circle id="start_2_" fill="none" stroke="#000000" stroke-miterlimit="10" cx="485.8" cy="167" r="1.2"/>
+				<g id="trajectory_2_">
+					<g>
+						<path fill="none" stroke="#000000" stroke-width="0.5" stroke-miterlimit="10" d="M557.8,89.8c0,0,0,0.2,0.1,0.5"/>
+						<path fill="none" stroke="#000000" stroke-width="0.5" stroke-miterlimit="10" stroke-dasharray="0.998,0.998" d="M558,91.2
+							c1.3,10.8,6.1,77.5-71.2,75.8"/>
+						<path fill="none" stroke="#000000" stroke-width="0.5" stroke-miterlimit="10" d="M486.3,167c-0.2,0-0.3,0-0.5,0"/>
+					</g>
+				</g>
+			</g>
+			<g id="time_3_">
+				
+					<line id="start_3_" fill="none" stroke="#000000" stroke-width="0.5" stroke-miterlimit="10" stroke-dasharray="1,1" x1="452.3" y1="173.9" x2="452.3" y2="196"/>
+				<g id="duration">
+					<g>
+						<line fill="none" stroke="#000000" stroke-width="0.5" stroke-miterlimit="10" x1="452.3" y1="185" x2="729.5" y2="185"/>
+						<g>
+							<rect x="729" y="181.7" width="1" height="6.5"/>
+						</g>
+					</g>
+				</g>
+			</g>
+		</g>
+	</g>
+	<g id="staff">
+		
+			<line id="staffline" fill="none" stroke="#000000" stroke-width="0.5" stroke-miterlimit="10" x1="77.9" y1="228" x2="740" y2="228"/>
+		<line id="clef" fill="none" stroke="#000000" stroke-width="0.5" stroke-miterlimit="10" x1="77.9" y1="213" x2="77.9" y2="240"/>
+	</g>
+</g>
+</svg>

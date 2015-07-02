@@ -1,0 +1,516 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1127C3371B136E990023344D /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1127C3361B136E990023344D /* libxml2.dylib */; };
+		1127C3391B1371A80023344D /* libo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1127C3381B1371A80023344D /* libo.a */; };
+		1127C33B1B1371B70023344D /* libomax.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1127C33A1B1371B70023344D /* libomax.a */; };
+		1127C33D1B1371DE0023344D /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1127C33C1B1371DE0023344D /* Carbon.framework */; };
+		1127C3401B13721E0023344D /* commonsyms.c in Sources */ = {isa = PBXBuildFile; fileRef = 1127C33F1B13721E0023344D /* commonsyms.c */; };
+		1127C3461B14AFBA0023344D /* commonsyms.c in Sources */ = {isa = PBXBuildFile; fileRef = 1127C33F1B13721E0023344D /* commonsyms.c */; };
+		1127C34C1B14AFBA0023344D /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1127C33C1B1371DE0023344D /* Carbon.framework */; };
+		1127C34D1B14AFBA0023344D /* libo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1127C3381B1371A80023344D /* libo.a */; };
+		1127C34E1B14AFBA0023344D /* libomax.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1127C33A1B1371B70023344D /* libomax.a */; };
+		1162D4841B44A40400A59F6B /* o.svg.c in Sources */ = {isa = PBXBuildFile; fileRef = 1162D4831B44A40400A59F6B /* o.svg.c */; };
+		1162D4861B44A41100A59F6B /* o.table.sort.c in Sources */ = {isa = PBXBuildFile; fileRef = 1162D4851B44A41100A59F6B /* o.table.sort.c */; };
+		1162D48A1B44A42E00A59F6B /* bezier_info.c in Sources */ = {isa = PBXBuildFile; fileRef = 1162D4871B44A42E00A59F6B /* bezier_info.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1127C3201B1368DD0023344D /* o.svg.mxo */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = o.svg.mxo; sourceTree = BUILT_PRODUCTS_DIR; };
+		1127C3361B136E990023344D /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		1127C3381B1371A80023344D /* libo.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libo.a; path = ../../libo/libo.a; sourceTree = "<group>"; };
+		1127C33A1B1371B70023344D /* libomax.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libomax.a; path = ../../libomax/libomax.a; sourceTree = "<group>"; };
+		1127C33C1B1371DE0023344D /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = /System/Library/Frameworks/Carbon.framework; sourceTree = "<absolute>"; };
+		1127C33F1B13721E0023344D /* commonsyms.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = commonsyms.c; path = "../../max6-sdk/c74support/max-includes/common/commonsyms.c"; sourceTree = "<group>"; };
+		1127C3531B14AFBA0023344D /* o.table.sort.mxo */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = o.table.sort.mxo; sourceTree = BUILT_PRODUCTS_DIR; };
+		1162D4831B44A40400A59F6B /* o.svg.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = o.svg.c; path = src/o.svg/o.svg.c; sourceTree = SOURCE_ROOT; };
+		1162D4851B44A41100A59F6B /* o.table.sort.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = o.table.sort.c; path = src/o.table.sort/o.table.sort.c; sourceTree = SOURCE_ROOT; };
+		1162D4871B44A42E00A59F6B /* bezier_info.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = bezier_info.c; path = src/include/bezier_info.c; sourceTree = SOURCE_ROOT; };
+		1162D4881B44A42E00A59F6B /* bezier_info.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = bezier_info.h; path = src/include/bezier_info.h; sourceTree = SOURCE_ROOT; };
+		1162D4891B44A42E00A59F6B /* o.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = o.h; path = src/include/o.h; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1127C31D1B1368DD0023344D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1127C3371B136E990023344D /* libxml2.dylib in Frameworks */,
+				1127C33D1B1371DE0023344D /* Carbon.framework in Frameworks */,
+				1127C3391B1371A80023344D /* libo.a in Frameworks */,
+				1127C33B1B1371B70023344D /* libomax.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1127C34A1B14AFBA0023344D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1127C34C1B14AFBA0023344D /* Carbon.framework in Frameworks */,
+				1127C34D1B14AFBA0023344D /* libo.a in Frameworks */,
+				1127C34E1B14AFBA0023344D /* libomax.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1127C3171B1368DD0023344D = {
+			isa = PBXGroup;
+			children = (
+				1127C3221B1368DD0023344D /* svg-lib */,
+				1127C32E1B136B8A0023344D /* include */,
+				1127C33E1B1371E50023344D /* framewords & libraries */,
+				1127C3211B1368DD0023344D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1127C3211B1368DD0023344D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1127C3201B1368DD0023344D /* o.svg.mxo */,
+				1127C3531B14AFBA0023344D /* o.table.sort.mxo */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1127C3221B1368DD0023344D /* svg-lib */ = {
+			isa = PBXGroup;
+			children = (
+				1162D4831B44A40400A59F6B /* o.svg.c */,
+				1162D4851B44A41100A59F6B /* o.table.sort.c */,
+			);
+			path = "svg-lib";
+			sourceTree = "<group>";
+		};
+		1127C32E1B136B8A0023344D /* include */ = {
+			isa = PBXGroup;
+			children = (
+				1162D4871B44A42E00A59F6B /* bezier_info.c */,
+				1162D4881B44A42E00A59F6B /* bezier_info.h */,
+				1162D4891B44A42E00A59F6B /* o.h */,
+			);
+			name = include;
+			path = "svg-lib.xcodeproj";
+			sourceTree = "<group>";
+		};
+		1127C33E1B1371E50023344D /* framewords & libraries */ = {
+			isa = PBXGroup;
+			children = (
+				1127C33F1B13721E0023344D /* commonsyms.c */,
+				1127C33C1B1371DE0023344D /* Carbon.framework */,
+				1127C3361B136E990023344D /* libxml2.dylib */,
+				1127C3381B1371A80023344D /* libo.a */,
+				1127C33A1B1371B70023344D /* libomax.a */,
+			);
+			name = "framewords & libraries";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1127C31F1B1368DD0023344D /* o.svg */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1127C3271B1368DD0023344D /* Build configuration list for PBXNativeTarget "o.svg" */;
+			buildPhases = (
+				1127C31C1B1368DD0023344D /* Sources */,
+				1127C31D1B1368DD0023344D /* Frameworks */,
+				1127C31E1B1368DD0023344D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = o.svg;
+			productName = "svg-lib";
+			productReference = 1127C3201B1368DD0023344D /* o.svg.mxo */;
+			productType = "com.apple.product-type.bundle";
+		};
+		1127C3441B14AFBA0023344D /* o.table.sort */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1127C3501B14AFBA0023344D /* Build configuration list for PBXNativeTarget "o.table.sort" */;
+			buildPhases = (
+				1127C3451B14AFBA0023344D /* Sources */,
+				1127C34A1B14AFBA0023344D /* Frameworks */,
+				1127C34F1B14AFBA0023344D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = o.table.sort;
+			productName = "svg-lib";
+			productReference = 1127C3531B14AFBA0023344D /* o.table.sort.mxo */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1127C3181B1368DD0023344D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = cnmat;
+				TargetAttributes = {
+					1127C31F1B1368DD0023344D = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 1127C31B1B1368DD0023344D /* Build configuration list for PBXProject "svg-lib" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 1127C3171B1368DD0023344D;
+			productRefGroup = 1127C3211B1368DD0023344D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1127C31F1B1368DD0023344D /* o.svg */,
+				1127C3441B14AFBA0023344D /* o.table.sort */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1127C31E1B1368DD0023344D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1127C34F1B14AFBA0023344D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1127C31C1B1368DD0023344D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1127C3401B13721E0023344D /* commonsyms.c in Sources */,
+				1162D4841B44A40400A59F6B /* o.svg.c in Sources */,
+				1162D48A1B44A42E00A59F6B /* bezier_info.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1127C3451B14AFBA0023344D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1127C3461B14AFBA0023344D /* commonsyms.c in Sources */,
+				1162D4861B44A41100A59F6B /* o.table.sort.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1127C3251B1368DD0023344D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_NS_ASSERTIONS = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
+				FRAMEWORK_SEARCH_PATHS = /Library/Frameworks;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				GCC_NO_COMMON_BLOCKS = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREFIX_HEADER = "../../max6-sdk/c74support/max-includes/macho-prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = NO;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_MASTER_OBJECT_FILE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../max6-sdk/c74support/max-includes\"",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"\"$(SRCROOT)/../../libo\"",
+					"\"$(SRCROOT)/../../libomax\"",
+					"\"$(SRCROOT)/include\"",
+				);
+				INFOPLIST_FILE = "src/$(TARGET_NAME)/Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"\"$(SRCROOT)/../../libo\"",
+					"\"$(SRCROOT)/../../libomax\"",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = (
+					"-DNO_TRANSLATION_SUPPORT",
+					"-g",
+				);
+				OTHER_LDFLAGS = "@../../max6-sdk/c74support/max-includes/c74_linker_flags.txt";
+				PRELINK_LIBS = "\"$(SRCROOT)/../../libo/libo.a\" \"$(SRCROOT)/../../libomax/libomax.a\"";
+				SDKROOT = macosx;
+				SYMROOT = build;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = mxo;
+			};
+			name = Debug;
+		};
+		1127C3261B1368DD0023344D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
+				FRAMEWORK_SEARCH_PATHS = /Library/Frameworks;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				GCC_NO_COMMON_BLOCKS = NO;
+				GCC_PREFIX_HEADER = "../../max6-sdk/c74support/max-includes/macho-prefix.pch";
+				GCC_UNROLL_LOOPS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = NO;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_MASTER_OBJECT_FILE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../max6-sdk/c74support/max-includes\"",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"\"$(SRCROOT)/../../libo\"",
+					"\"$(SRCROOT)/../../libomax\"",
+					"\"$(SRCROOT)/include\"",
+				);
+				INFOPLIST_FILE = "src/$(TARGET_NAME)/Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"\"$(SRCROOT)/../../libo\"",
+					"\"$(SRCROOT)/../../libomax\"",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_CFLAGS = (
+					"-DNO_TRANSLATION_SUPPORT",
+					"-g",
+				);
+				OTHER_LDFLAGS = "@../../max6-sdk/c74support/max-includes/c74_linker_flags.txt";
+				PRELINK_LIBS = "\"$(SRCROOT)/../../libo/libo.a\" \"$(SRCROOT)/../../libomax/libomax.a\"";
+				SDKROOT = macosx;
+				SYMROOT = build;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = mxo;
+			};
+			name = Release;
+		};
+		1127C3281B1368DD0023344D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
+				DSTROOT = "$(PROJECT_DIR)/build";
+				FRAMEWORK_SEARCH_PATHS = (
+					/Library/Frameworks,
+					"\"$(SRCROOT)/../../max6-sdk/c74support/max-includes\"",
+				);
+				INFOPLIST_FILE = "$(inherited)";
+				INSTALL_PATH = "$(PROJECT_DIR)/externals";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/r/Documents/dev-lib/libo",
+					"/Users/r/Documents/dev-lib/libomax",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = NO;
+				STRIP_INSTALLED_PRODUCT = NO;
+				STRIP_STYLE = all;
+				USER_HEADER_SEARCH_PATHS = "${SDK_DIR}\"/usr/include/libxml2";
+				WRAPPER_EXTENSION = mxo;
+			};
+			name = Debug;
+		};
+		1127C3291B1368DD0023344D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				DSTROOT = "$(PROJECT_DIR)/build";
+				FRAMEWORK_SEARCH_PATHS = (
+					/Library/Frameworks,
+					"\"$(SRCROOT)/../../max6-sdk/c74support/max-includes\"",
+				);
+				INFOPLIST_FILE = "$(inherited)";
+				INSTALL_PATH = "$(PROJECT_DIR)/externals";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/r/Documents/dev-lib/libo",
+					"/Users/r/Documents/dev-lib/libomax",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = NO;
+				STRIP_INSTALLED_PRODUCT = NO;
+				STRIP_STYLE = all;
+				USER_HEADER_SEARCH_PATHS = "${SDK_DIR}\"/usr/include/libxml2";
+				WRAPPER_EXTENSION = mxo;
+			};
+			name = Release;
+		};
+		1127C3511B14AFBA0023344D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
+				DSTROOT = "$(PROJECT_DIR)/build";
+				FRAMEWORK_SEARCH_PATHS = (
+					/Library/Frameworks,
+					"\"$(SRCROOT)/../../max6-sdk/c74support/max-includes\"",
+				);
+				INFOPLIST_FILE = "$(inherited)";
+				INSTALL_PATH = "$(PROJECT_DIR)/externals";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/r/Documents/dev-lib/libo",
+					"/Users/r/Documents/dev-lib/libomax",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				PRODUCT_NAME = o.table.sort;
+				SKIP_INSTALL = NO;
+				STRIP_INSTALLED_PRODUCT = NO;
+				STRIP_STYLE = all;
+				SYMROOT = build;
+				USER_HEADER_SEARCH_PATHS = "${SDK_DIR}\"/usr/include/libxml2";
+				WRAPPER_EXTENSION = mxo;
+			};
+			name = Debug;
+		};
+		1127C3521B14AFBA0023344D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				DSTROOT = "$(PROJECT_DIR)/build";
+				FRAMEWORK_SEARCH_PATHS = (
+					/Library/Frameworks,
+					"\"$(SRCROOT)/../../max6-sdk/c74support/max-includes\"",
+				);
+				INFOPLIST_FILE = "$(inherited)";
+				INSTALL_PATH = "$(PROJECT_DIR)/externals";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/r/Documents/dev-lib/libo",
+					"/Users/r/Documents/dev-lib/libomax",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				PRODUCT_NAME = o.table.sort;
+				SKIP_INSTALL = NO;
+				STRIP_INSTALLED_PRODUCT = NO;
+				STRIP_STYLE = all;
+				SYMROOT = build;
+				USER_HEADER_SEARCH_PATHS = "${SDK_DIR}\"/usr/include/libxml2";
+				WRAPPER_EXTENSION = mxo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1127C31B1B1368DD0023344D /* Build configuration list for PBXProject "svg-lib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1127C3251B1368DD0023344D /* Debug */,
+				1127C3261B1368DD0023344D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1127C3271B1368DD0023344D /* Build configuration list for PBXNativeTarget "o.svg" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1127C3281B1368DD0023344D /* Debug */,
+				1127C3291B1368DD0023344D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1127C3501B14AFBA0023344D /* Build configuration list for PBXNativeTarget "o.table.sort" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1127C3511B14AFBA0023344D /* Debug */,
+				1127C3521B14AFBA0023344D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1127C3181B1368DD0023344D /* Project object */;
+}
