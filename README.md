@@ -12,7 +12,8 @@ There are two main objects for the current system:
 * pure-data source
 
 ### documentation
-For more detailed information, please see the paper included in the doc folder.
+For more detailed information, please see the paper included in the doc folder
+( https://github.com/ramagottfried/odot-svg/blob/master/doc/SVG-OSC-Notation-revised.pdf ).
 
 ### demos
 Some demos of the system in action are available here:
