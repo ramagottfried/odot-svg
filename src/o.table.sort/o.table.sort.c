@@ -631,12 +631,13 @@ t_osc_atom_s *otable_sort_get_atom(t_osc_bndl_s *bndl, char *lookupaddr, long nt
         
 //        printf("%s %d %p 2\n", __func__, __LINE__, bndl);
 
-        if(ar)
+        if(ar != NULL)
         {
-            t_osc_msg_s *m = osc_message_array_s_get(ar, 0);
-            if( osc_message_s_getArgCount(m) > 0 )
+            t_osc_msg_s *m = NULL;
+            m = osc_message_array_s_get(ar, 0);
+            if( m && osc_message_s_getArgCount(m) > 0 )
             {
-                osc_message_s_getArg(osc_message_array_s_get(ar, 0), nth, &at);
+                osc_message_s_getArg(m, (int)nth, &at);
             }
             
             osc_message_array_s_free(ar);
@@ -681,7 +682,7 @@ t_osc_bndl_s *otable_sort_do_lookupRange(t_otable_sort *x, t_osc_atom_s *target_
     // first find lowest bundle, then add until at highest
     
     t_osc_bndl_s *startbndl = NULL;
-    t_osc_bndl_s *prevbndl = NULL;
+    t_osc_bndl_s *prevbndl = osc_bundle_s_allocEmptyBundle();
     t_osc_bndl_s *unionbndl = NULL;
     
     while(cur)
@@ -771,8 +772,10 @@ t_osc_bndl_s *otable_sort_do_lookupRange(t_otable_sort *x, t_osc_atom_s *target_
             if(unionbndl)
             {
                 osc_bundle_s_deepFree(prevbndl);
+                prevbndl = NULL;
                 osc_bundle_s_deepCopy(&prevbndl, unionbndl);
                 osc_bundle_s_deepFree(unionbndl);
+                unionbndl = NULL;
             }
             
             unionbndl = osc_bundle_s_union(bndl, prevbndl);
@@ -793,8 +796,10 @@ t_osc_bndl_s *otable_sort_do_lookupRange(t_otable_sort *x, t_osc_atom_s *target_
             if(unionbndl)
             {
                 osc_bundle_s_deepFree(prevbndl);
+                prevbndl = NULL;
                 osc_bundle_s_deepCopy(&prevbndl, unionbndl);
                 osc_bundle_s_deepFree(unionbndl);
+                unionbndl = NULL;
             }
             
             unionbndl = osc_bundle_s_union(bndl, prevbndl);
@@ -818,8 +823,10 @@ t_osc_bndl_s *otable_sort_do_lookupRange(t_otable_sort *x, t_osc_atom_s *target_
             if(unionbndl)
             {
                 osc_bundle_s_deepFree(prevbndl);
+                prevbndl = NULL;
                 osc_bundle_s_deepCopy(&prevbndl, unionbndl);
                 osc_bundle_s_deepFree(unionbndl);
+                unionbndl = NULL;
             }
             
             unionbndl = osc_bundle_s_union(bndl, prevbndl);
