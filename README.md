@@ -16,10 +16,10 @@ For more detailed information, please see the paper included in the doc folder
 ( https://github.com/ramagottfried/odot-svg/blob/master/doc/SVG-OSC-Notation-revised.pdf ).
 
 ### demos
-Some demos of the system in action are available here:
-* editing spatial trajectories in frame notation: https://vimeo.com/132389233
-* spatial frame notation layer organization in Illustrator: https://vimeo.com/132385223
-* frame example svg file organization (result of layer organization in Illustrator): https://vimeo.com/132385220
-* importing the SVG file as OSC (odot) in Max : https://vimeo.com/132385218
-* granular synthesis notation example: https://vimeo.com/132385305
-* granular example patch walkthrough: https://vimeo.com/132385221
+Some video demos of the system in action are available here:
+* <a href="https://vimeo.com/132389233" target="_blank">editing spatial trajectories in frame notation</a>
+* <a href="https://vimeo.com/132385223" target="_blank">spatial frame notation layer organization in Illustrator</a>
+* <a href="https://vimeo.com/132385220" target="_blank">frame example svg file organization (result of layer organization in Illustrator)</a>
+* <a href="https://vimeo.com/132385218" target="_blank">importing the SVG file as OSC (odot) in Max</a>
+* <a href="https://vimeo.com/132385305" target="_blank">granular synthesis notation example</a>
+* <a href="https://vimeo.com/132385221" target="_blank">granular example patch walkthrough</a>
