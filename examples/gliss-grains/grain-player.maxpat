@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 70.0, 164.0, 334.0, 258.0 ],
+		"rect" : [ 70.0, 164.0, 359.0, 252.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 11.0,
@@ -37,6 +37,19 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-9",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 200.0, 98.5, 67.0, 21.0 ],
+					"style" : "",
+					"text" : "loadmess 0"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-40",
 					"maxclass" : "newobj",
@@ -1187,6 +1200,15 @@
 									"destination" : [ "obj-4", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
+									"source" : [ "obj-2", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-4", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
 									"source" : [ "obj-31", 0 ]
 								}
 
@@ -1560,7 +1582,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 291.0, 267.0, 38.0, 21.0 ],
 									"style" : "",
-									"text" : "5000."
+									"text" : "1000."
 								}
 
 							}
@@ -2551,8 +2573,9 @@
 									"fontsize" : 11.0,
 									"id" : "obj-11",
 									"maxclass" : "newobj",
-									"numinlets" : 0,
-									"numoutlets" : 0,
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
 									"patching_rect" : [ 596.0, 449.0, 41.0, 21.0 ],
 									"style" : "",
 									"text" : "o.print"
@@ -4205,6 +4228,7 @@
 			}
 , 			{
 				"box" : 				{
+					"fontface" : 0,
 					"fontname" : "Arial",
 					"fontsize" : 11.0,
 					"id" : "obj-19",
@@ -4212,9 +4236,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "FullPacket" ],
-					"patching_rect" : [ 171.5, 187.0, 106.0, 21.0 ],
+					"patching_rect" : [ 171.5, 187.0, 91.0, 21.0 ],
 					"style" : "",
-					"text" : "o.pack /getstave 2"
+					"text" : "o.pack /getstave"
 				}
 
 			}
@@ -4794,6 +4818,15 @@
 				}
 
 			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-24", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-9", 0 ]
+				}
+
+			}
  ],
 		"parameters" : 		{
 			"obj-17" : [ "live.slider", "live.slider", 0 ],
@@ -4853,6 +4886,10 @@
 			}
 , 			{
 				"name" : "o.table.sort.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.print.mxo",
 				"type" : "iLaX"
 			}
 , 			{
