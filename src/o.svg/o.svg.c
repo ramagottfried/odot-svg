@@ -1,5 +1,5 @@
 /*
-Written by John MacCallum, The Center for New Music and Audio Technologies,
+Written by Rama Gottfried, The Center for New Music and Audio Technologies,
 University of California, Berkeley.  Copyright (c) 2011, The Regents of
 the University of California (Regents). 
 Permission to use, copy, modify, distribute, and distribute modified versions

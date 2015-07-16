@@ -45,7 +45,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 730.5, 301.0, 109.0, 19.0 ],
-					"presentation_rect" : [ 666.0, 339.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "rama gottfried, 2015"
 				}
@@ -61,7 +60,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 422.5, 147.0, 446.0, 129.0 ],
-					"presentation_rect" : [ 376.5, 163.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "messages:\nclear : clear all storage\ndosort : sort by address indicated by @sort attribute\nprintElem : print sorted list values (this name might change soon)\ndump : output stored bundles in order they were received\ndump : <sort address> : output stored bundles in sorted order (name might change soon)\n\nlookup <value> : output stored bundles with the closest value to the lookup value. if there is an exact match one bundle is output, if the lookup value falls between two bundles, both bundles are output as /lower and /upper subbundles surrounding the lookup value."
 				}
@@ -76,7 +74,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 36.0, 357.0, 84.0, 33.0 ],
-					"presentation_rect" : [ 59.0, 475.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "sort /data/float, dosort"
 				}
@@ -119,7 +116,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 422.5, 96.0, 378.0, 43.0 ],
-					"presentation_rect" : [ 492.0, 122.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "attributes: \n@key <osc address> : sets key address to use for storing incoming bundle\n@sort <osc address> : sets address to use for sorting alogorithm"
 				}
@@ -134,22 +130,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 720.0, 33.0, 130.0, 33.0 ],
-					"presentation_rect" : [ 559.0, 43.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "o.table.sort"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-36",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 221.0, 454.0, 41.0, 21.0 ],
-					"style" : "",
-					"text" : "o.print"
 				}
 
 			}
@@ -174,7 +156,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 26.0, 199.0, 41.0, 21.0 ],
-					"presentation_rect" : [ 112.0, 83.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "dosort"
 				}
@@ -808,14 +789,12 @@
 					"fontface" : 0,
 					"fontsize" : 11.0,
 					"id" : "obj-48",
-					"linecount" : 6,
 					"maxclass" : "o.display",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 190.0, 489.0, 270.0, 95.0 ],
-					"text" : "/count : 366,\n/data/int : 0,\n/data/float : 0.,\n/data/symbol : \" \",\n/time : 2015-07-02T07:26:53.012696Z,\n/keystr : \"2015-07-02T07:26:53.012696Z\"",
-					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+					"patching_rect" : [ 190.0, 489.0, 270.0, 33.0 ],
+					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
 			}
@@ -857,7 +836,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 256.0, 157.0, 69.5, 21.0 ],
+					"patching_rect" : [ 256.0, 157.0, 70.0, 21.0 ],
 					"style" : ""
 				}
 
@@ -967,15 +946,6 @@
 			}
  ],
 		"lines" : [ 			{
-				"patchline" : 				{
-					"destination" : [ "obj-36", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-1", 0 ]
-				}
-
-			}
-, 			{
 				"patchline" : 				{
 					"destination" : [ "obj-41", 0 ],
 					"disabled" : 0,
@@ -1192,10 +1162,6 @@
 			}
 , 			{
 				"name" : "o.expr.codebox.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.print.mxo",
 				"type" : "iLaX"
 			}
  ],
