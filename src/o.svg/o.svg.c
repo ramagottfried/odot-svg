@@ -744,6 +744,8 @@ void osvg_parsePath(t_osvg *x, char *pathstr, t_osc_bndl_u *bndl)
     
 }
 
+
+
 long oxml_addNode(t_oxml_node **head, const xmlChar *type)
 {
     t_oxml_node *p = *head;
@@ -941,6 +943,39 @@ static void oxml_process_branch(t_osvg *x, xmlNode *a_node, t_osc_bndl_u *bndl)
                         osc_bundle_u_addMsg(n_bndl, msg);
                         
                     }
+                    if(!xmlStrcmp(attr->name, (const xmlChar *)"transform"))
+                    {
+                        // maybe add /type for transform...
+
+                        char *v = (char *)val;
+                        char *cpy = v, *tok = NULL;
+                        tok = strtok(cpy, "(");
+                        char buf[strlen((char *)attr->name)+1+strlen(tok)];
+                        sprintf(buf, "/transform/%s", tok);
+                        msg = osc_message_u_allocWithAddress(buf);
+
+                        tok = strtok(NULL, ")");
+                        cpy = tok;
+                        tok = NULL;
+                        tok = strtok(cpy, " ");
+                        while(tok != NULL)
+                        {
+                            
+                            errno = 0;
+                            char *p = (char *)tok;
+                            double d = strtod(tok, &p);
+                            if(errno == 0 && p != tok )
+                                osc_message_u_appendDouble(msg, d);
+                            else
+                                osc_message_u_appendString(msg, (char *)tok);
+                            
+                            tok = strtok(NULL, " ");
+
+                        }
+                        
+                        osc_bundle_u_addMsg(n_bndl, msg);
+
+                    }
                     else if(xmlStrcmp(attr->name, (const xmlChar *)"id")) //(not id)
                     {
                         //un-labeled svg elements, line, rects, anything really
@@ -979,7 +1014,12 @@ static void oxml_process_branch(t_osvg *x, xmlNode *a_node, t_osc_bndl_u *bndl)
             
             val = xmlNodeGetContent(cur_node);
             if(!xmlStrcmp(cur_node->name, (const xmlChar *)"text") && strlen((const char *)val))
-                post("%s content %s %x %d", cur_node->name, val, val);
+            {
+                msg = osc_message_u_allocWithAddress("/content");
+                osc_message_u_appendString(msg, (char *)val);
+                osc_bundle_u_addMsg(n_bndl, msg);
+//                post("%s content %s %x %d", cur_node->name, val, val);
+            }
             
             xmlFree(val);
             val = NULL;
