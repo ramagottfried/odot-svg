@@ -943,16 +943,19 @@ static void oxml_process_branch(t_osvg *x, xmlNode *a_node, t_osc_bndl_u *bndl)
                         osc_bundle_u_addMsg(n_bndl, msg);
                         
                     }
-                    if(!xmlStrcmp(attr->name, (const xmlChar *)"transform"))
+                    else if(!xmlStrcmp(attr->name, (const xmlChar *)"transform"))
                     {
                         // maybe add /type for transform...
 
                         char *v = (char *)val;
                         char *cpy = v, *tok = NULL;
                         tok = strtok(cpy, "(");
-                        char buf[strlen((char *)attr->name)+1+strlen(tok)];
-                        sprintf(buf, "/transform/%s", tok);
-                        msg = osc_message_u_allocWithAddress(buf);
+                        
+                        msg = osc_message_u_allocWithAddress("/transform/type");
+                        osc_message_u_appendString(msg, (char *)tok);
+                        osc_bundle_u_addMsg(n_bndl, msg);
+                        
+                        msg = osc_message_u_allocWithAddress("/transform/data");
 
                         tok = strtok(NULL, ")");
                         cpy = tok;
